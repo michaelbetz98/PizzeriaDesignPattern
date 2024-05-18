@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pizzeria.PizzaManager
 {
-    internal class IngredientFunghi : Pizza
+    public class IngredientFunghi : Pizza
     {
         public IngredientFunghi(Pizza pizza) : base()
         {

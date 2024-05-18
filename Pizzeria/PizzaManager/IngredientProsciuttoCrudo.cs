@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Pizzeria.PizzaManager
 {
-    public class IngredientAnanas : Pizza
+    public class IngredientProsciuttoCrudo : Pizza
     {
-        public IngredientAnanas(Pizza pizza) : base()
+        public IngredientProsciuttoCrudo(Pizza pizza) : base()
         {
-            this.price = 0;
+            this.price = pizza.price + 2;
             this.basePizza = pizza.basePizza;
             this.dough = pizza.dough;
             this.ingrediants = pizza.ingrediants;
             if (pizza.ingrediants == null)
             {
-                this.ingrediants = new List<string> { "Ananas" };
+                this.ingrediants = new List<string> { "ProsciuttoCrudo" };
             }
             else
             {
-                this.ingrediants.Add("Ananas");
+                this.ingrediants.Add("ProsciuttoCrudo");
             }
         }
     }

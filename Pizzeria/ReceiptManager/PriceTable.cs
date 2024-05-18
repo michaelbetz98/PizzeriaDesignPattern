@@ -26,7 +26,7 @@ namespace Pizzeria.ReceiptManager
         {
             float price = 0f;
 
-            if (table.ContainsKey(toSearch))
+            if (toSearch != null && table.ContainsKey(toSearch))
             {
                 price = table[toSearch];
             }
